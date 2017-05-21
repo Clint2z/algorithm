@@ -73,7 +73,7 @@ public class Percolation {
         checkRange(row, col);
         return grid[row-1][col-1];
     }
-    public boolean isFull(int row, int col) {// is site (row, col) full?
+    public boolean isFull(int row, int col) {// is site (row, col) full? connect to first row.
         checkRange(row, col);
         int p = (row - 1) * n + col;
         return UFT.connected(p,0);

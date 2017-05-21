@@ -170,6 +170,7 @@ public class KdTree {
             rectDistance = node.left.rect.distanceTo(p);
         }
 
+        //if distance to another side rect is less than closetDistance there is a probability
         if (rectDistance != -1 && rectDistance < closetDistance) {
             if (cmp < 0) {
                 currentPoint = nearest(p, node.right, closestPoint, closetDistance);
